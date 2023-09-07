@@ -1,0 +1,47 @@
+Overall checklist:
+
+- Main game functions:
+  - Players all start with 5 cards  #Done
+  - Starts in Forward direction   #Done
+  - Player can play cards
+    - allow same color  #Done
+    - allow same number / StrRep  #Done (S+S) (N+N) (W+W) (R+R)
+    - allow wild any time   #Done
+  - catches invalid int as input  #Done
+  - catches string as input   #Done
+- Special Operations:
+  - direction reverses on reverse card  #Done
+  - + cards give cards to the next player based on direction  #Done
+    - Forward   #Done
+    - Backward  #Done
+  - Wild card lets next player play any card they wish  #Done
+  - skip card skips based on current direction  #Done
+    - allows you to skip (n) or (s)   #Done
+      - Forward   #Done
+      - Backward  #Done
+    - on (s), game skips the correct index
+      - forward   #Done
+      - backward  #Done
+- general:
+  - game ends when user reaches 0 cards   #Done
+  - game reshuffles play area when deck runs out  #Done
+  - game creates the deck properly  #Done
+  - game deals hands properly   #Done
+  - game formats to terminal properly   #Done
+  - On a given turn:
+    - (Check if user should be skipped, or receiving cards + skipped), handle properly if so  #Done
+    - ask player for input  #Done
+    - receive valid input   #Done
+    - add card at that index to the top of playArea   #Done
+    - remove that card from user hand   #Done
+    - go to the correct next user based off of index  #Done
+  - On a turn with no valid card:
+    - (begins by checking if user has a playable card)  #Done
+    - should print out that you don't have a valid card   #Done
+      (draw card)
+      - if new card is valid, print out user's hand   #Done
+      - go into input loop  #Done
+      (if second drawn card is invalid)
+      - should print out that 2 cards were drawn, and user is skipped   #Done
+      - should skip user  #Done
+
